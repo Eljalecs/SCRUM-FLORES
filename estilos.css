@@ -1,0 +1,122 @@
+/*index style*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.col-index{
+    background-color: #268968;
+    height: 100%;
+}
+.col-index{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+.collapse a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.index-btn-content a ,.index-btn-pedidos{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.index-btn-content a:hover,.index-btn-pedidos:hover{
+    color: black;
+    margin-left:10px;
+    transition: all 0.5s;
+    color: #eebc0f;
+}
+
+.index-col-right{
+    background-color: #f0f0fa;
+    text-align: center;
+    padding: 50px;
+}
+.index-tittle h2{
+    color: black;
+    font-weight: 600;
+}
+.index-ped-menu a{
+    font-size: 20px;
+
+}
+.index-ped-menu a{
+    transition: none;
+}
+.index-btn-pedidos{
+    background-color: transparent;
+    border: none;
+}
+.index-tittle h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+.index-smbox{
+    background-color: #f9a632;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.fa-list{
+    font-size: 30px !important;
+}
+.index-col-big{
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 50PX;
+}
+.index-table{
+    width: 100%;
+    text-align: center;
+}
+.index-col-big h4{
+    color: #3a3952;
+    font-weight: 600;
+}
+.index-table-btn{
+    background-color: #268968;
+    color: white;
+    border: none;
+    height: inherit;
+}
+.index-table-tr{
+    border-bottom: 1px solid #e4e7ea;
+    
+}
+.index-table-tr:hover{
+    background-color: #9cd8c4;
+}
+/*index style  colors dark gray #3a3952   light gray #e4e7ea*/
+
+/*reg order styles*/
+.productForm input:focus{
+    border: none;
+    box-shadow: 3px 1px 1px rgba(7, 92, 30, 0.5);
+}
+.regpedido-container{
+    padding: 100px 100px;
+}
+.regpedido-div{
+    text-align: center;
+    background-color: white;
+}
+.resCliente{
+    font-weight: 600;
+}
+.restr:nth-child(even){
+    background-color: #7ccc92;
+}
+.restr{
+    background-color: #7ccc92;
+}

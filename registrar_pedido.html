@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flores.com</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+    <body>
+        
+        <div class="container-fluid regpedido-container">
+            <div class="row">
+                <!--aqui le hace el david-->
+                <div class="col-sm-7" >
+                    <form action="">
+                        <h3 for="text">Formulario de Registro de Pedidos</h3>
+                        <div >
+                            <h5 for="text">Cliente Destino</h5>
+                            <h2 id="contador"></h2>
+                        </div>
+                    </form>
+                        <div class="row">
+                            <div class="col-sm-4"  >
+                                <form action="">
+                                    <label for="text">Nombre del cliente</label>
+                                    <div class="form-group productForm" >
+                                        <input type="text" class="form-control" placeholder="" id="nombreCliente" autocomplete="off">
+                                        <span id="autocompletar">
+                                        </span>
+                                    </div>
+                                </form>       
+                            </div>
+                            <div class="col-sm-4"  >
+                                <form action="">
+                                    <label for="text">Clasificacion</label>
+                                    <div class="form-group productForm" >
+                                        <input type="text" class="form-control" placeholder="" id="clasificacion" autocomplete="off">
+                                        <span id="autocompletar">
+                                        </span>
+                                    </div>
+                                </form>       
+                            </div>
+                            <div class="col-sm-4"  >
+                                <form action="">
+                                    <label for="text">Ciudad Destino</label>
+                                    <div class="form-group productForm" >
+                                        <input type="text" class="form-control" placeholder="" id="ciudad" autocomplete="off">
+                                        <span id="autocompletar">
+                                        </span>
+                                    </div>
+                                </form>       
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class="ml-auto" >
+                                <div class="col-sm-12"  >
+                                <i class="bi bi-plus"></i>
+                                    <button class="btn btn-success" id="btnaddClient" onclick="addClient()">CONFIRMAR CLIENTE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div  >
+                            <h5 for="text">Agregar Productos</h5>
+                        </div>        
+                        <div class="row">
+                            <div class="col-sm-4"  >
+                                <form action="">
+                                    <label for="text">Nombre del Producto</label>
+                                    <div class="form-group productForm" >
+                                        <input type="text" class="form-control" placeholder="" id="nombreProducto" autocomplete="off">
+                                        <span id="autocompletar">
+                                        </span>
+                                    </div>
+                                </form>       
+                            </div>
+                            <div class="col-sm-4"  >
+                                <form action="">
+                                    <label for="text">Variacion</label>
+                                    <div class="form-group productForm" >
+                                        <input type="text" class="form-control" placeholder="" id="variacion" autocomplete="off">
+                                        <span id="autocompletar">
+                                        </span>
+                                    </div>
+                                </form>       
+                            </div>
+                            <div class="col-sm-4"  >
+                                <form action="">
+                                    <label for="text">Cantidad</label>
+                                    <div class="form-group productForm" >
+                                        <input type="number" class="form-control" placeholder="" id="cantidad" autocomplete="off">
+                                        <span id="autocompletar">
+                                        </span>
+                                    </div>
+                                </form>       
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class="ml-auto" >
+                                <div class="col-sm-12"  >
+                                
+                                <i class="bi bi-plus"></i>
+                                    <button class="btn btn-success" onclick="registerItem()">AGREGAR PRODUCTO</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--aqui le hace el jaime-->
+                <div class="col-sm-5">
+                    <div class="regpedido-div">
+                        <div class="regpedido-descri">
+                            <div class="regpedido-descrip">
+                                <h2>RESUMEN DE PEDIDO</h2>
+                            </div>
+                            <hr>
+                            <p>Nombre cliente : <span class="resCliente" id="resnomClient"></span></p>
+                            <p>Clasificación :<span class="resCliente" id="resClasificacion"></span></p>
+                            <p>Destino :<span class="resCliente" id="resDestino"></span></p>
+                            <table class="regped-table" id="regprodTable">
+                                <tr class="" id="restr">
+                                    <th>
+                                        Nombre
+                                    </th>
+                                    <th>
+                                        Cantidad
+                                    </th>
+                                    <th>
+                                        Precio
+                                    </th>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+          <script src="autocomplete.js"></script>
+    </body>
+</html> 
